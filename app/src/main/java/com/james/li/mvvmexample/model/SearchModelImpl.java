@@ -14,7 +14,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 /**
  * Created by jyj-lsy on 9/8/16 in zsl-tech.
  */
-public class SearchModel implements SearchModelInterface{
+public class SearchModelImpl implements SearchModelInterface{
     private OnSearchFinishListener listener;
 
     public void setOnSearchFinishListener(OnSearchFinishListener listener) {
@@ -24,7 +24,7 @@ public class SearchModel implements SearchModelInterface{
     @Override
     public void getIpAddress(String ip) {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://int.dpool.sina.com.cn/iplookup/iplookup.php/")
+                .baseUrl("http://int.dpool.sina.com.cn/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 

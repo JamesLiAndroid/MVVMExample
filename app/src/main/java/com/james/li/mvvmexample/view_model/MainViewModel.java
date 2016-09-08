@@ -4,16 +4,16 @@ import android.view.View;
 
 import com.james.li.mvvmexample.databinding.ActivityMainBinding;
 import com.james.li.mvvmexample.model.OnSearchFinishListener;
-import com.james.li.mvvmexample.model.SearchModel;
+import com.james.li.mvvmexample.model.SearchModelImpl;
 import com.james.li.mvvmexample.model.entity.IpAddress;
 
 /**
  * Created by jyj-lsy on 9/8/16 in zsl-tech.
  */
-public class MainViewModel extends SearchModel implements OnSearchFinishListener{
+public class MainViewModel extends SearchModelImpl implements OnSearchFinishListener{
 
     private ActivityMainBinding binding;
-    private SearchModel searchModel = new SearchModel();
+    private SearchModelImpl searchModel = new SearchModelImpl();
 
     public MainViewModel(ActivityMainBinding binding) {
         this.binding = binding;

@@ -1,9 +1,10 @@
-package com.james.li.mvvmexample;
+package com.james.li.mvvmexample.view;
 
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.james.li.mvvmexample.R;
 import com.james.li.mvvmexample.databinding.ActivityMainBinding;
 import com.james.li.mvvmexample.view_model.MainViewModel;
 
